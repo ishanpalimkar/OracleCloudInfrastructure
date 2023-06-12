@@ -3,7 +3,6 @@ import requests
 
 # Using the boilder plate function deployed in OCI FN
 
-
 # Get the Instance Principals Security Token Signer
 signer = oci.auth.signers.InstancePrincipalsSecurityTokenSigner()
 
