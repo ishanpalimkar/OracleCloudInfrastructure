@@ -1,11 +1,14 @@
 import oci
 import requests
 
+# Using the boilder plate function deployed in OCI FN
+
+
 # Get the Instance Principals Security Token Signer
 signer = oci.auth.signers.InstancePrincipalsSecurityTokenSigner()
 
 # Define the OCI Function endpoint URL
-function_endpoint = "https://wn6qtwv6s4a.us-phoenix-1.functions.oci.oraclecloud.com/20181201/functions/ocid1.fnfunc.oc1.phx.aaaaaaaaq7kzj5yem2wlxpqrmzomm5yhv7hcjvpdkb6g3gijlsaup42fgnra/actions/invoke"
+function_endpoint = "https://<your_function_endpoint>"
 
 # Define the request payload
 payload = {
